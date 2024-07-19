@@ -518,3 +518,9 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+.custom-paragraph {
+    font-size: 14px; /* Ajusta según sea necesario */
+    line-height: 1.4; /* Ajusta según sea necesario */
+  }
+  
