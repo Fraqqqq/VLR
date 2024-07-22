@@ -76,8 +76,8 @@ h6,
 }
 
 .btn-lg-square {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 
 .btn-square,
@@ -524,3 +524,6 @@ h6,
     line-height: 1.4; /* Ajusta según sea necesario */
   }
   
+.py-ajuste  {
+    padding: 1rem;
+  }
