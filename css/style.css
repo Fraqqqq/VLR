@@ -605,3 +605,33 @@ img {
         display: -webkit-flex;
     }
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Solución específica para Safari */
+.portfolio-item img {
+    object-fit: cover; /* Asegura que las imágenes se ajusten al contenedor sin distorsionarse */
+    width: 100%;
+}
+
+.portfolio-container, .portfolio-inner {
+    display: -webkit-flex; /* Prefijo para Safari */
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten en varias filas si es necesario */
+    -webkit-flex-wrap: wrap;
+}
+
+.portfolio-inner {
+    min-height: 300px; /* o el valor que necesites */
+    height: auto; /* Asegura que el contenedor pueda ajustarse */
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio-container {
+        flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+    }
+}
