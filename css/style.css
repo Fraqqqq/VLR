@@ -586,3 +586,22 @@ body {
     }
 }
 
+.portfolio-container {
+    display: -webkit-box;      /* Prefijo para Safari 6.1+ */
+    display: -moz-box;         /* Prefijo para Firefox */
+    display: -ms-flexbox;      /* Prefijo para IE 10 */
+    display: -webkit-flex;     /* Prefijo para Safari 7+ */
+    display: flex;             /* Versión estándar */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Asegura que las imágenes no creen espacio extra */
+}
+
+@supports (-webkit-touch-callout: none) {
+    .portfolio-container {
+        display: -webkit-flex;
+    }
+}
