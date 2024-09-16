@@ -157,7 +157,7 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(15, 66, 41, .6);
+    background: rgba(15, 66, 41, .4);
     z-index: 1;
 }
 
@@ -656,3 +656,17 @@ img {
     mix-blend-mode: multiply; /* Efecto de mezcla para mantener los colores */
     pointer-events: none; /* Permite que la imagen siga siendo interactiva */
 }
+
+.carousel img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original */
+    max-height: 800px; /* Incrementa la altura máxima para que las imágenes sean más grandes */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+  }
+  
+  .carousel-container {
+    width: 100%; /* O un valor fijo, como 90% */
+    height: 800px; /* Ajusta el alto a lo que prefieras para que las imágenes sean más grandes */
+    overflow: hidden; /* Evita desbordamiento de las imágenes grandes */
+  }
+  
