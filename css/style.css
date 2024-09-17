@@ -670,3 +670,25 @@ img {
     overflow: hidden; /* Evita desbordamiento de las imágenes grandes */
   }
   
+  /* Centrar el logo y el texto en dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-brand h1 {
+        font-size: 20px; /* Puedes ajustar el tamaño de la fuente según lo necesites */
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-brand img.header-logo {
+        margin-right: 10px; /* Añade un pequeño margen si es necesario */
+        max-width: 50px; /* Ajusta el tamaño del logo si es necesario para pantallas pequeñas */
+    }
+}
